@@ -15,6 +15,3 @@ venv/
 *.log
 .DS_Store
 Thumbs.db
-
-# 本地材料（不公开）
-01_登记材料/

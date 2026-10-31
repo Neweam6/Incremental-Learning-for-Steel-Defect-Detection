@@ -1,0 +1,1030 @@
+{
+  "software_name": "钢材表面缺陷类增量学习系统",
+  "version": "V1.0",
+  "source_scope": "应用与增量扩展模块 包含修改代码并保留上游版权头",
+  "files": [
+    {
+      "file": "app.py",
+      "sha256": "94a43d6dd2cbf81c025f8b9e9308eb7739addebe5827a4ab1b431a1ee15bbf44",
+      "rows": 214,
+      "start_display_row": 1,
+      "end_display_row": 214
+    },
+    {
+      "file": "launch.py",
+      "sha256": "468204fa0d8b43d36d55956c2e380bc4efa6eb5c75860ff3171553f677969fc9",
+      "rows": 34,
+      "start_display_row": 215,
+      "end_display_row": 248
+    },
+    {
+      "file": "ui/workflow.py",
+      "sha256": "1aa38bd59e2775705ee8ee19cc7f8543282c3fa61d11f9dcd1fa9e7c4367798a",
+      "rows": 583,
+      "start_display_row": 249,
+      "end_display_row": 831
+    },
+    {
+      "file": "adapters/deformable_detr.py",
+      "sha256": "6a6263891c7483c372e1f887413eaff5048eb7386644127e3580e4972afe1fef",
+      "rows": 171,
+      "start_display_row": 832,
+      "end_display_row": 1002
+    },
+    {
+      "file": "services/dataset_service.py",
+      "sha256": "75a77d058401882fb2caba6746f4662a2eb50bbc51f4fbc9289b153f7e63896c",
+      "rows": 267,
+      "start_display_row": 1003,
+      "end_display_row": 1269
+    },
+    {
+      "file": "services/task_service.py",
+      "sha256": "7d70130c90f5d3ea6ffb030f3d93bdd584992e1ed722e6d4e75ff8a43a9436be",
+      "rows": 209,
+      "start_display_row": 1270,
+      "end_display_row": 1478
+    },
+    {
+      "file": "services/workflow_store.py",
+      "sha256": "b581acbde36032dbf0fcb2b4370ad67ac9480cf8c2ea682bc0337795145b2933",
+      "rows": 175,
+      "start_display_row": 1479,
+      "end_display_row": 1653
+    },
+    {
+      "file": "incremental_train.py",
+      "sha256": "205817c59990cb15206f00ebc189ac7e70d37bc443c05b9594dfea4d3b33a62a",
+      "rows": 3108,
+      "start_display_row": 1654,
+      "end_display_row": 4761
+    },
+    {
+      "file": "models/incremental_detr.py",
+      "sha256": "b7cd119c867bcd3f9d8e8d188ad6cb48a8f07baf1124fc7b35e4a8647a719154",
+      "rows": 2726,
+      "start_display_row": 4762,
+      "end_display_row": 7487
+    },
+    {
+      "file": "dual_branch_train.py",
+      "sha256": "e850c330cbc79b3cad4ed6a96ff5dbf6362e7f65d25d457b48f762a4c4737638",
+      "rows": 204,
+      "start_display_row": 7488,
+      "end_display_row": 7691
+    },
+    {
+      "file": "models/dual_branch_detr.py",
+      "sha256": "6cb660d8cf8215d6fef27f089a63069999a8ce112dda1130cfff39b4ced39e96",
+      "rows": 232,
+      "start_display_row": 7692,
+      "end_display_row": 7923
+    },
+    {
+      "file": "models/dual_denoising.py",
+      "sha256": "e9bbb7f2306dcc0bd8fe931fddfb71fd61bb06be9821bf41abc5b5eac6ab4dac",
+      "rows": 67,
+      "start_display_row": 7924,
+      "end_display_row": 7990
+    },
+    {
+      "file": "datasets/neu_det.py",
+      "sha256": "125bad16bd18276b2f3bc60e640c3b0cd1a1c08a5ba8aa313d626c06d650d091",
+      "rows": 371,
+      "start_display_row": 7991,
+      "end_display_row": 8361
+    },
+    {
+      "file": "tools/run_incremental_task.py",
+      "sha256": "6893bf604953673f450cd3c1fce8c2c90d16cc748e20c5dfbf4ad1a14b2bbb5a",
+      "rows": 168,
+      "start_display_row": 8362,
+      "end_display_row": 8529
+    },
+    {
+      "file": "util/gradio_compat.py",
+      "sha256": "acba6251724bfce1a65894f54e5955bf11c2d2a408da5f812d38424677ecef37",
+      "rows": 53,
+      "start_display_row": 8530,
+      "end_display_row": 8582
+    },
+    {
+      "file": "util/detection_metrics.py",
+      "sha256": "e294f349a13bac835e715402f729acf150b5effb08b4013dc3acf092ba1a674b",
+      "rows": 159,
+      "start_display_row": 8583,
+      "end_display_row": 8741
+    },
+    {
+      "file": "util/checkpoint_config.py",
+      "sha256": "e659a214a7c9c7a7b174a066633cddaae3c60d724818d68cc256c4f24334a230",
+      "rows": 143,
+      "start_display_row": 8742,
+      "end_display_row": 8884
+    }
+  ],
+  "total_display_rows": 8884,
+  "selected_display_rows": 3000,
+  "format": "前1500显示行与后1500显示行 每页50行 共60页 空行省略 长行仅在文档中换行",
+  "selection_pages": [
+    {
+      "page": 1,
+      "first": {
+        "text": "# 文件 app.py",
+        "path": "app.py",
+        "line": null
+      },
+      "last": {
+        "text": "    active = store.setting(\"active_version_id\")",
+        "path": "app.py",
+        "line": 65,
+        "continued": false
+      }
+    },
+    {
+      "page": 2,
+      "first": {
+        "text": "    if active:",
+        "path": "app.py",
+        "line": 66,
+        "continued": false
+      },
+      "last": {
+        "text": "        return _model_cache[key]",
+        "path": "app.py",
+        "line": 117,
+        "continued": false
+      }
+    },
+    {
+      "page": 3,
+      "first": {
+        "text": "    preferences = inference_preferences()",
+        "path": "app.py",
+        "line": 118,
+        "continued": false
+      },
+      "last": {
+        "text": "    l=color, font=font)",
+        "path": "app.py",
+        "line": 163,
+        "continued": true
+      }
+    },
+    {
+      "page": 4,
+      "first": {
+        "text": "    return np.array(pil)",
+        "path": "app.py",
+        "line": 164,
+        "continued": false
+      },
+      "last": {
+        "text": "                 \"shape_lr_scale\": \"20\", \"shape_loss_coef\": \"2\", \"aspect_loss_coef\": \"4\", **adv",
+        "path": "app.py",
+        "line": 210,
+        "continued": false
+      }
+    },
+    {
+      "page": 5,
+      "first": {
+        "text": "    }",
+        "path": "app.py",
+        "line": 210,
+        "continued": true
+      },
+      "last": {
+        "text": "\"\"\"User-facing incremental workflow, backed by persisted model and task records.\"\"\"",
+        "path": "ui/workflow.py",
+        "line": 1,
+        "continued": false
+      }
+    },
+    {
+      "page": 6,
+      "first": {
+        "text": "import json",
+        "path": "ui/workflow.py",
+        "line": 3,
+        "continued": false
+      },
+      "last": {
+        "text": "        return \"该版本仅可用于检测，请选择旧三类 phase-0 基座。\"",
+        "path": "ui/workflow.py",
+        "line": 62,
+        "continued": false
+      }
+    },
+    {
+      "page": 7,
+      "first": {
+        "text": "    split = SPLITS[version[\"split_group\"]]",
+        "path": "ui/workflow.py",
+        "line": 63,
+        "continued": false
+      },
+      "last": {
+        "text": "        return \"请选择任务。\", empty, \"\", []",
+        "path": "ui/workflow.py",
+        "line": 110,
+        "continued": false
+      }
+    },
+    {
+      "page": 8,
+      "first": {
+        "text": "    recover_interrupted(store)",
+        "path": "ui/workflow.py",
+        "line": 111,
+        "continued": false
+      },
+      "last": {
+        "text": "    figure = go.Figure()",
+        "path": "ui/workflow.py",
+        "line": 156,
+        "continued": false
+      }
+    },
+    {
+      "page": 9,
+      "first": {
+        "text": "    for name, color in ((\"旧类\", \"#2563eb\"), (\"新类\", \"#ea580c\"), (\"整体\", \"#16a34a\")):",
+        "path": "ui/workflow.py",
+        "line": 157,
+        "continued": false
+      },
+      "last": {
+        "text": "    按无预测计分。\"]",
+        "path": "ui/workflow.py",
+        "line": 202,
+        "continued": true
+      }
+    },
+    {
+      "page": 10,
+      "first": {
+        "text": "    folder = store.root / \"models\" / version_id",
+        "path": "ui/workflow.py",
+        "line": 203,
+        "continued": false
+      },
+      "last": {
+        "text": "                next_task = gr.Button(\"下一步：配置增量任务\", interactive=bool(base_choices))",
+        "path": "ui/workflow.py",
+        "line": 243,
+        "continued": false
+      }
+    },
+    {
+      "page": 11,
+      "first": {
+        "text": "            with gr.Tab(\"创建增量任务\", id=\"task\"):",
+        "path": "ui/workflow.py",
+        "line": 244,
+        "continued": false
+      },
+      "last": {
+        "text": "                prepare_button = gr.Button(\"校验数据并保存训练方案\", variant=\"primary\")",
+        "path": "ui/workflow.py",
+        "line": 273,
+        "continued": false
+      }
+    },
+    {
+      "page": 12,
+      "first": {
+        "text": "                validation_report = gr.Markdown(\"等待数据校验。\", elem_id=\"data-report\")",
+        "path": "ui/workflow.py",
+        "line": 274,
+        "continued": false
+      },
+      "last": {
+        "text": "    \"comparison-after\")",
+        "path": "ui/workflow.py",
+        "line": 308,
+        "continued": true
+      }
+    },
+    {
+      "page": 13,
+      "first": {
+        "text": "                    compare_table = gr.Dataframe(headers=[\"版本\", \"类别\", \"置信度\", \"x1\", \"y1\",",
+        "path": "ui/workflow.py",
+        "line": 309,
+        "continued": false
+      },
+      "last": {
+        "text": "                version = register_model(store, path, name, names, file_path(config))",
+        "path": "ui/workflow.py",
+        "line": 351,
+        "continued": false
+      }
+    },
+    {
+      "page": 14,
+      "first": {
+        "text": "            bases = parent_choices(store, app.BASE_CKPT)",
+        "path": "ui/workflow.py",
+        "line": 352,
+        "continued": false
+      },
+      "last": {
+        "text": "                raise gr.Error(\"请先校验并保存任务。\")",
+        "path": "ui/workflow.py",
+        "line": 393,
+        "continued": false
+      }
+    },
+    {
+      "page": 15,
+      "first": {
+        "text": "            with app.COMPUTE_LOCK:",
+        "path": "ui/workflow.py",
+        "line": 394,
+        "continued": false
+      },
+      "last": {
+        "text": "        @user_errors",
+        "path": "ui/workflow.py",
+        "line": 441,
+        "continued": false
+      }
+    },
+    {
+      "page": 16,
+      "first": {
+        "text": "        def activate(version_id):",
+        "path": "ui/workflow.py",
+        "line": 442,
+        "continued": false
+      },
+      "last": {
+        "text": "        start_selected.click(start, task_select, [monitor_summary, task_select, workflow_tabs],",
+        "path": "ui/workflow.py",
+        "line": 479,
+        "continued": false
+      }
+    },
+    {
+      "page": 17,
+      "first": {
+        "text": "     api_name=\"start_selected_task\")",
+        "path": "ui/workflow.py",
+        "line": 479,
+        "continued": true
+      },
+      "last": {
+        "text": "        if not hasattr(args, key):",
+        "path": "adapters/deformable_detr.py",
+        "line": 25,
+        "continued": false
+      }
+    },
+    {
+      "page": 18,
+      "first": {
+        "text": "            setattr(args, key, value)",
+        "path": "adapters/deformable_detr.py",
+        "line": 26,
+        "continued": false
+      },
+      "last": {
+        "text": "    if order is None or len(order) != count or len(set(order)) != count or any(i not in range(6",
+        "path": "adapters/deformable_detr.py",
+        "line": 73,
+        "continued": false
+      }
+    },
+    {
+      "page": 19,
+      "first": {
+        "text": "    ) for i in order):",
+        "path": "adapters/deformable_detr.py",
+        "line": 73,
+        "continued": true
+      },
+      "last": {
+        "text": "        raise ValueError(\"模型配置 JSON 必须是对象。\")",
+        "path": "adapters/deformable_detr.py",
+        "line": 119,
+        "continued": false
+      }
+    },
+    {
+      "page": 20,
+      "first": {
+        "text": "    model, args, info = load_model(path, device=\"cpu\", class_names=class_names, config=config)",
+        "path": "adapters/deformable_detr.py",
+        "line": 120,
+        "continued": false
+      },
+      "last": {
+        "text": "    return {\"metric_protocol\": \"COCO_AP50_perclassNMS_top100\", \"per_class_ap50\": per_class,",
+        "path": "adapters/deformable_detr.py",
+        "line": 168,
+        "continued": false
+      }
+    },
+    {
+      "page": 21,
+      "first": {
+        "text": "            \"old_ap\": mean(old_ids), \"new_ap\": mean(new_ids), \"overall_ap\": mean(range(6)),",
+        "path": "adapters/deformable_detr.py",
+        "line": 169,
+        "continued": false
+      },
+      "last": {
+        "text": "        parts.remove(directory)",
+        "path": "services/dataset_service.py",
+        "line": 56,
+        "continued": false
+      }
+    },
+    {
+      "page": 22,
+      "first": {
+        "text": "    return str(PurePosixPath(*parts).with_suffix(\"\")).casefold()",
+        "path": "services/dataset_service.py",
+        "line": 57,
+        "continued": false
+      },
+      "last": {
+        "text": "                raw_label = read(label)",
+        "path": "services/dataset_service.py",
+        "line": 104,
+        "continued": false
+      }
+    },
+    {
+      "page": 23,
+      "first": {
+        "text": "                text = raw_label.decode(\"utf-8-sig\")",
+        "path": "services/dataset_service.py",
+        "line": 105,
+        "continued": false
+      },
+      "last": {
+        "text": "def _counts(records):",
+        "path": "services/dataset_service.py",
+        "line": 157,
+        "continued": false
+      }
+    },
+    {
+      "page": 24,
+      "first": {
+        "text": "    images, boxes = Counter(), Counter()",
+        "path": "services/dataset_service.py",
+        "line": 158,
+        "continued": false
+      },
+      "last": {
+        "text": "    training_hashes = {record[\"pixel_sha256\"] for record in chosen_new+chosen_replay}",
+        "path": "services/dataset_service.py",
+        "line": 201,
+        "continued": false
+      }
+    },
+    {
+      "page": 25,
+      "first": {
+        "text": "    for record in validation:",
+        "path": "services/dataset_service.py",
+        "line": 202,
+        "continued": false
+      },
+      "last": {
+        "text": "    return path",
+        "path": "services/dataset_service.py",
+        "line": 247,
+        "continued": false
+      }
+    },
+    {
+      "page": 26,
+      "first": {
+        "text": "def verify_snapshot(task_dir, manifest):",
+        "path": "services/dataset_service.py",
+        "line": 250,
+        "continued": false
+      },
+      "last": {
+        "text": "def resolve_parent_model(store, selection, project_root):",
+        "path": "services/task_service.py",
+        "line": 34,
+        "continued": false
+      }
+    },
+    {
+      "page": 27,
+      "first": {
+        "text": "    selected = str(selection or \"\").strip()",
+        "path": "services/task_service.py",
+        "line": 35,
+        "continued": false
+      },
+      "last": {
+        "text": "        raise ValueError(\"随机种子范围是 0～2147483647。\")",
+        "path": "services/task_service.py",
+        "line": 80,
+        "continued": false
+      }
+    },
+    {
+      "page": 28,
+      "first": {
+        "text": "    if digest(parent[\"checkpoint\"]) != parent[\"sha256\"]:",
+        "path": "services/task_service.py",
+        "line": 81,
+        "continued": false
+      },
+      "last": {
+        "text": "        raise ValueError(\"只能启动已通过校验且尚未运行的任务；修改方案请创建新任务。\")",
+        "path": "services/task_service.py",
+        "line": 120,
+        "continued": false
+      }
+    },
+    {
+      "page": 29,
+      "first": {
+        "text": "    task_dir = Path(task[\"task_dir\"])",
+        "path": "services/task_service.py",
+        "line": 121,
+        "continued": false
+      },
+      "last": {
+        "text": "    except ProcessLookupError:",
+        "path": "services/task_service.py",
+        "line": 167,
+        "continued": false
+      }
+    },
+    {
+      "page": 30,
+      "first": {
+        "text": "        return False",
+        "path": "services/task_service.py",
+        "line": 168,
+        "continued": false
+      },
+      "last": {
+        "text": "    temporary = path.with_name(path.name + \".\" + uuid.uuid4().hex + \".tmp\")",
+        "path": "services/workflow_store.py",
+        "line": 30,
+        "continued": false
+      }
+    },
+    {
+      "page": 31,
+      "first": {
+        "text": "                \"shape_loss_coef\",",
+        "path": "models/incremental_detr.py",
+        "line": 3384,
+        "continued": false
+      },
+      "last": {
+        "text": "        \"loss_hard_neg\"",
+        "path": "models/incremental_detr.py",
+        "line": 3441,
+        "continued": false
+      }
+    },
+    {
+      "page": 32,
+      "first": {
+        "text": "    ] = getattr(",
+        "path": "models/incremental_detr.py",
+        "line": 3442,
+        "continued": false
+      },
+      "last": {
+        "text": "        class_weights=class_weights,",
+        "path": "models/incremental_detr.py",
+        "line": 3500,
+        "continued": false
+      }
+    },
+    {
+      "page": 33,
+      "first": {
+        "text": "    )",
+        "path": "models/incremental_detr.py",
+        "line": 3501,
+        "continued": false
+      },
+      "last": {
+        "text": "def _assert_frozen(model, frozen):",
+        "path": "dual_branch_train.py",
+        "line": 54,
+        "continued": false
+      }
+    },
+    {
+      "page": 34,
+      "first": {
+        "text": "    current = model.state_dict()",
+        "path": "dual_branch_train.py",
+        "line": 55,
+        "continued": false
+      },
+      "last": {
+        "text": "    optimizer = torch.optim.AdamW([",
+        "path": "dual_branch_train.py",
+        "line": 101,
+        "continued": false
+      }
+    },
+    {
+      "page": 35,
+      "first": {
+        "text": "        {\"params\": groups[\"decoder\"], \"lr\": args.dual_lr},",
+        "path": "dual_branch_train.py",
+        "line": 102,
+        "continued": false
+      },
+      "last": {
+        "text": "    baseline = evaluate_dual(model, val_loader, trainer.device, old_classes, new_classes)",
+        "path": "dual_branch_train.py",
+        "line": 141,
+        "continued": false
+      }
+    },
+    {
+      "page": 36,
+      "first": {
+        "text": "    emit(\"扩展模型初始评估完成\", metrics=baseline)",
+        "path": "dual_branch_train.py",
+        "line": 142,
+        "continued": false
+      },
+      "last": {
+        "text": "    l\"]}",
+        "path": "dual_branch_train.py",
+        "line": 182,
+        "continued": true
+      }
+    },
+    {
+      "page": 37,
+      "first": {
+        "text": "    trainer.history[\"phase_metrics\"].append(summary)",
+        "path": "dual_branch_train.py",
+        "line": 183,
+        "continued": false
+      },
+      "last": {
+        "text": "        self.reference_points.bias[:2].copy_(detector.transformer.reference_points.bias)",
+        "path": "models/dual_branch_detr.py",
+        "line": 46,
+        "continued": false
+      }
+    },
+    {
+      "page": 38,
+      "first": {
+        "text": "        for layer, cls, box in zip(self.layers, self.class_embed, self.bbox_embed):",
+        "path": "models/dual_branch_detr.py",
+        "line": 47,
+        "continued": false
+      },
+      "last": {
+        "text": "        self.new_class_ids = list(new_class_ids)",
+        "path": "models/dual_branch_detr.py",
+        "line": 96,
+        "continued": false
+      }
+    },
+    {
+      "page": 39,
+      "first": {
+        "text": "        self.class_global_ids = sorted(self.old_class_ids + self.new_class_ids)",
+        "path": "models/dual_branch_detr.py",
+        "line": 97,
+        "continued": false
+      },
+      "last": {
+        "text": "            \"pred_boxes\": torch.cat([old[\"pred_boxes\"], new[\"pred_boxes\"]], dim=1),",
+        "path": "models/dual_branch_detr.py",
+        "line": 146,
+        "continued": false
+      }
+    },
+    {
+      "page": 40,
+      "first": {
+        "text": "            \"old_outputs\": old,",
+        "path": "models/dual_branch_detr.py",
+        "line": 147,
+        "continued": false
+      },
+      "last": {
+        "text": "        probabilities = logits.sigmoid()",
+        "path": "models/dual_branch_detr.py",
+        "line": 196,
+        "continued": false
+      }
+    },
+    {
+      "page": 41,
+      "first": {
+        "text": "        ce = F.binary_cross_entropy_with_logits(logits, onehot, reduction=\"none\")",
+        "path": "models/dual_branch_detr.py",
+        "line": 197,
+        "continued": false
+      },
+      "last": {
+        "text": "        local = torch.full_like(labels, -1)",
+        "path": "models/dual_denoising.py",
+        "line": 14,
+        "continued": false
+      }
+    },
+    {
+      "page": 42,
+      "first": {
+        "text": "        for branch_id, global_id in enumerate(new_ids):",
+        "path": "models/dual_denoising.py",
+        "line": 15,
+        "continued": false
+      },
+      "last": {
+        "text": "        padding_mask = torch.cat([~valid, torch.zeros((len(targets), normal_queries),",
+        "path": "models/dual_denoising.py",
+        "line": 65,
+        "continued": false
+      }
+    },
+    {
+      "page": 43,
+      "first": {
+        "text": "                                                     dtype=torch.bool, device=device)], dim=1)",
+        "path": "models/dual_denoising.py",
+        "line": 66,
+        "continued": false
+      },
+      "last": {
+        "text": "    0: SPLIT_GROUPS['1']['old'],",
+        "path": "datasets/neu_det.py",
+        "line": 45,
+        "continued": false
+      }
+    },
+    {
+      "page": 44,
+      "first": {
+        "text": "    1: SPLIT_GROUPS['1']['old'] + SPLIT_GROUPS['1']['new'],",
+        "path": "datasets/neu_det.py",
+        "line": 46,
+        "continued": false
+      },
+      "last": {
+        "text": "        img_path = self.img_files[idx]",
+        "path": "datasets/neu_det.py",
+        "line": 104,
+        "continued": false
+      }
+    },
+    {
+      "page": 45,
+      "first": {
+        "text": "        img = Image.open(img_path).convert('RGB')",
+        "path": "datasets/neu_det.py",
+        "line": 105,
+        "continued": false
+      },
+      "last": {
+        "text": "    def __init__(self, max_per_class=50):",
+        "path": "datasets/neu_det.py",
+        "line": 164,
+        "continued": false
+      }
+    },
+    {
+      "page": 46,
+      "first": {
+        "text": "        self.max_per_class = max_per_class",
+        "path": "datasets/neu_det.py",
+        "line": 165,
+        "continued": false
+      },
+      "last": {
+        "text": "        if n_samples and n_samples < len(all_samples):",
+        "path": "datasets/neu_det.py",
+        "line": 223,
+        "continued": false
+      }
+    },
+    {
+      "page": 47,
+      "first": {
+        "text": "            total_w = sum(weights)",
+        "path": "datasets/neu_det.py",
+        "line": 224,
+        "continued": false
+      },
+      "last": {
+        "text": "    scales = [200, 224, 256, 288, 320]",
+        "path": "datasets/neu_det.py",
+        "line": 284,
+        "continued": false
+      }
+    },
+    {
+      "page": 48,
+      "first": {
+        "text": "    if image_set == 'train':",
+        "path": "datasets/neu_det.py",
+        "line": 286,
+        "continued": false
+      },
+      "last": {
+        "text": "        local_size=get_local_size()",
+        "path": "datasets/neu_det.py",
+        "line": 342,
+        "continued": false
+      }
+    },
+    {
+      "page": 49,
+      "first": {
+        "text": "    )",
+        "path": "datasets/neu_det.py",
+        "line": 343,
+        "continued": false
+      },
+      "last": {
+        "text": "                chosen = rng.choice(candidates, size=n, replace=False).tolist()",
+        "path": "datasets/neu_det.py",
+        "line": 400,
+        "continued": false
+      }
+    },
+    {
+      "page": 50,
+      "first": {
+        "text": "                self.selected_indices.extend(chosen)",
+        "path": "datasets/neu_det.py",
+        "line": 401,
+        "continued": false
+      },
+      "last": {
+        "text": "    from incremental_train import IncrementalTrainer",
+        "path": "tools/run_incremental_task.py",
+        "line": 29,
+        "continued": false
+      }
+    },
+    {
+      "page": 51,
+      "first": {
+        "text": "    from services.dataset_service import verify_snapshot",
+        "path": "tools/run_incremental_task.py",
+        "line": 30,
+        "continued": false
+      },
+      "last": {
+        "text": "    args.resume = config[\"parent_checkpoint\"]",
+        "path": "tools/run_incremental_task.py",
+        "line": 80,
+        "continued": false
+      }
+    },
+    {
+      "page": 52,
+      "first": {
+        "text": "    trainer = IncrementalTrainer(args)",
+        "path": "tools/run_incremental_task.py",
+        "line": 81,
+        "continued": false
+      },
+      "last": {
+        "text": "    for key in (\"old_ap\", \"new_ap\", \"overall_ap\"):",
+        "path": "tools/run_incremental_task.py",
+        "line": 129,
+        "continued": false
+      }
+    },
+    {
+      "page": 53,
+      "first": {
+        "text": "        if saved.get(key) is None or after[key] is None or abs(saved[key] - after[key]) > 1e-5:",
+        "path": "tools/run_incremental_task.py",
+        "line": 130,
+        "continued": false
+      },
+      "last": {
+        "text": "The schema shim leaves request validation unchanged. Upload middleware delays",
+        "path": "util/gradio_compat.py",
+        "line": 5,
+        "continued": false
+      }
+    },
+    {
+      "page": 54,
+      "first": {
+        "text": "the upload response until Gradio's background cache move has completed.",
+        "path": "util/gradio_compat.py",
+        "line": 6,
+        "continued": false
+      },
+      "last": {
+        "text": "\"\"\"COCO AP50 on the same postprocessed predictions used by the legacy report.\"\"\"",
+        "path": "util/detection_metrics.py",
+        "line": 1,
+        "continued": false
+      }
+    },
+    {
+      "page": 55,
+      "first": {
+        "text": "import contextlib",
+        "path": "util/detection_metrics.py",
+        "line": 3,
+        "continued": false
+      },
+      "last": {
+        "text": "    # 保证 quota 保底捞回的低分候选同样被缩放",
+        "path": "util/detection_metrics.py",
+        "line": 63,
+        "continued": false
+      }
+    },
+    {
+      "page": 56,
+      "first": {
+        "text": "    if score_scale:",
+        "path": "util/detection_metrics.py",
+        "line": 64,
+        "continued": false
+      },
+      "last": {
+        "text": "        matched = set()",
+        "path": "util/detection_metrics.py",
+        "line": 117,
+        "continued": false
+      }
+    },
+    {
+      "page": 57,
+      "first": {
+        "text": "        for oj in order:",
+        "path": "util/detection_metrics.py",
+        "line": 118,
+        "continued": false
+      },
+      "last": {
+        "text": "        evaluator.evaluate()",
+        "path": "util/detection_metrics.py",
+        "line": 168,
+        "continued": false
+      }
+    },
+    {
+      "page": 58,
+      "first": {
+        "text": "        evaluator.accumulate()",
+        "path": "util/detection_metrics.py",
+        "line": 169,
+        "continued": false
+      },
+      "last": {
+        "text": "    \"\"\"For base training, preserve the user's requested new adapter architecture.\"\"\"",
+        "path": "util/checkpoint_config.py",
+        "line": 50,
+        "continued": false
+      }
+    },
+    {
+      "page": 59,
+      "first": {
+        "text": "    config = {**_saved_args(checkpoint), **checkpoint.get(\"model_config\", {})}",
+        "path": "util/checkpoint_config.py",
+        "line": 51,
+        "continued": false
+      },
+      "last": {
+        "text": "            raise RuntimeError(\"Dual checkpoint class order does not match its branch partition",
+        "path": "util/checkpoint_config.py",
+        "line": 101,
+        "continued": false
+      }
+    },
+    {
+      "page": 60,
+      "first": {
+        "text": "    \")",
+        "path": "util/checkpoint_config.py",
+        "line": 101,
+        "continued": true
+      },
+      "last": {
+        "text": "                          aux_loss=False, with_box_refine=True, two_stage=False)",
+        "path": "util/checkpoint_config.py",
+        "line": 156,
+        "continued": false
+      }
+    }
+  ]
+}
