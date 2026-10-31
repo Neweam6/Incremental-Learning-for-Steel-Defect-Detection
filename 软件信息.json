@@ -1,0 +1,35 @@
+{
+  "software_name": "钢材表面缺陷类增量学习系统",
+  "version": "V1.0",
+  "package_date": "2026-10-29",
+  "package_type": "copyright_materials_and_standalone_demo",
+  "identity_fields_to_confirm": [
+    "申请人及权利人",
+    "实际开发完成日期",
+    "发表情况",
+    "权利归属及开发方式"
+  ],
+  "supported_scope": "本项目兼容旧三类基座的一次3+3类别增量、模型版本登记与检测",
+  "not_implemented": [
+    "任意模型家族自动适配",
+    "任意类别注册",
+    "连续多阶段增量",
+    "界面基座初训",
+    "中断续训"
+  ],
+  "bundled_weights": [
+    "MODEL/base_output_group1/checkpoint_phase0.pth",
+    "MODEL/daily_dual/best_overall_phase1.pth"
+  ],
+  "demo_images": {
+    "train": 30,
+    "validation": 30
+  },
+  "demo_defaults": {
+    "samples_per_new_class": 5,
+    "replay_per_old_class": 5,
+    "epochs": 1,
+    "batch_size": 2
+  },
+  "weight_export": "removed old optimizer/scheduler states; every model tensor unchanged"
+}

@@ -1,0 +1,17 @@
+{
+  "checkpoint": "MODEL/daily_dual/best_overall_phase1.pth",
+  "name": "双分支 V1 日常最佳",
+  "architecture": "dual",
+  "sha256": "573d3afa3e2c4515532525280801f7aef608c89aa2e87d302ea77438f6939947",
+  "epoch": 44,
+  "training_images_per_new_class": 100,
+  "metric_protocol": "COCO_AP50_perclassNMS_top100",
+  "validation_metrics": {
+    "old_ap50": 0.7658914872298279,
+    "new_ap50": 0.4743937975918211,
+    "overall_ap50": 0.6201426424108245,
+    "scratches_ap50": 0.26376637663766367
+  },
+  "confidence_threshold": 0.2,
+  "display_max_detections": 20
+}

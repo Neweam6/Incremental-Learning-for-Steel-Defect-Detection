@@ -1,0 +1,1087 @@
+{
+  "software_name": "钢材表面缺陷类增量学习系统",
+  "version": "V1.0",
+  "package_date": "2026-10-29",
+  "entry": "启动演示.bat",
+  "environment": "Uses an installed compatible Python / PyTorch environment; dependencies are not bundled.",
+  "manifest_scope": "All delivered files except this manifest itself. Sizes and hashes describe the initial package before user runs.",
+  "file_count_excluding_manifest": 201,
+  "total_bytes_excluding_manifest": 285434352,
+  "models": [
+    {
+      "source": "MODEL/base_output_group1/checkpoint_phase0.pth",
+      "source_sha256": "fa291c78b31700c4f8bf85ef65409fa6bcc0b8c5c645768a03b2b38c9627088d",
+      "package": "MODEL/base_output_group1/checkpoint_phase0.pth",
+      "sha256": "eebb47f9c1d63ff36fd9bb740a839e472ae8c813f449dd78fe34427379e99ecd",
+      "bytes": 134215932,
+      "model_tensors_unchanged": 427,
+      "omitted": [
+        "optimizer",
+        "scheduler"
+      ],
+      "purpose": "fresh incremental initialization or inference; no optimizer continuation"
+    },
+    {
+      "source": "incremental_output_100_dual_20261027_122539_681/best_overall_phase1.pth",
+      "source_sha256": "88b66d58abf8c67d8acfa36ce8812fa356a9596c8ed16a6b73d9c75644257078",
+      "package": "MODEL/daily_dual/best_overall_phase1.pth",
+      "sha256": "573d3afa3e2c4515532525280801f7aef608c89aa2e87d302ea77438f6939947",
+      "bytes": 146943326,
+      "model_tensors_unchanged": 538,
+      "omitted": [
+        "optimizer",
+        "scheduler"
+      ],
+      "purpose": "fresh incremental initialization or inference; no optimizer continuation"
+    }
+  ],
+  "images_per_global_class": {
+    "train": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5
+    },
+    "valid": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5
+    }
+  },
+  "verification": {
+    "browser_workflow_checks": 13,
+    "real_incremental_training_after_weight_export": true,
+    "launch_bat_and_daily_best_real_browser_detection": true,
+    "all_model_tensors_equal_originals": true,
+    "offline_full_checkpoint_load_and_inference": true,
+    "train_validation_pixels_disjoint": true,
+    "document_pages": {
+      "01_用户操作手册.pdf": 7,
+      "02_软件设计说明书.pdf": 5,
+      "03_源程序节选.pdf": 60
+    },
+    "source_each_page_50_display_rows": true,
+    "all_72_pages_visually_reviewed": true,
+    "original_project_modified_by_packaging": false,
+    "parent_path_and_empty_registry_fix": [
+      "empty registry preselects real bundled file without fake registration",
+      "quoted relative path strict-load forward registration selects real version",
+      "refresh and browser reload retain registered base selection",
+      "missing paths and dual models rejected with clear errors and no registration",
+      "direct path task preparation deduplicates registration and preserves checkpoint"
+    ],
+    "source_excerpt_updated_after_parent_fix": true
+  },
+  "files": [
+    {
+      "path": "00_先读我.md",
+      "bytes": 1163,
+      "sha256": "7f09f44b0d606512d4b96edb23175f3be1a85ff1a92e7ed507661c9a728a2eef"
+    },
+    {
+      "path": "01_登记材料/00_软件信息与材料说明.md",
+      "bytes": 1148,
+      "sha256": "f6fda48935bda1153c00154406ac761ad42ac61dc8f56900ea1557a3e72610ba"
+    },
+    {
+      "path": "01_登记材料/01_用户操作手册.docx",
+      "bytes": 584413,
+      "sha256": "ef15519762a3d0da03b4e7c65d4b1ef9963992ff4c7e87fd97147998395581d0"
+    },
+    {
+      "path": "01_登记材料/01_用户操作手册.pdf",
+      "bytes": 651758,
+      "sha256": "fb607e35796d0de7a0031258d56e6401b661f2ce3f131ba85747a7f58f23138a"
+    },
+    {
+      "path": "01_登记材料/02_软件设计说明书.docx",
+      "bytes": 53981,
+      "sha256": "1b4d560d39961de09f6f1e06de7dd984675799e1fe33b02bb7d6f4187ccdee3d"
+    },
+    {
+      "path": "01_登记材料/02_软件设计说明书.pdf",
+      "bytes": 163557,
+      "sha256": "86a94fcd63c906813b03d829306d7840291adc558988417aa6d0878f42429e1b"
+    },
+    {
+      "path": "01_登记材料/03_源程序节选.docx",
+      "bytes": 148855,
+      "sha256": "a269c6003ced048721068b8d1abadda66ceb5959ce22c72ac61fb7385bd326f6"
+    },
+    {
+      "path": "01_登记材料/03_源程序节选.pdf",
+      "bytes": 415612,
+      "sha256": "df3507b864362e5d25a27200554f7a5c148608f528026cd66132527d0e4c931e"
+    },
+    {
+      "path": "01_登记材料/源程序对应清单.json",
+      "bytes": 29242,
+      "sha256": "2e8bfe9cb89c6b873101f9766b378d0a96a50d0eee455f3d755eb5caf9de07a4"
+    },
+    {
+      "path": "02_软件源码/adapters/__init__.py",
+      "bytes": 38,
+      "sha256": "d426d43b5194df2f653b5d727203caead92d545aa4cce16ca5c663f12452b1f3"
+    },
+    {
+      "path": "02_软件源码/adapters/deformable_detr.py",
+      "bytes": 9702,
+      "sha256": "6a6263891c7483c372e1f887413eaff5048eb7386644127e3580e4972afe1fef"
+    },
+    {
+      "path": "02_软件源码/app.py",
+      "bytes": 11103,
+      "sha256": "94a43d6dd2cbf81c025f8b9e9308eb7739addebe5827a4ab1b431a1ee15bbf44"
+    },
+    {
+      "path": "02_软件源码/app_runs/workflow/registry.sqlite3",
+      "bytes": 36864,
+      "sha256": "aaddd4a234d0f2ccae77f792067a09b71e2718b5aaa7c0f4711ec276d3f3e080"
+    },
+    {
+      "path": "02_软件源码/configs/app_inference.json",
+      "bytes": 581,
+      "sha256": "16cfefb621b3dae77091203f7c1882f76e3eda601a0f4757fd0f0734d672d1af"
+    },
+    {
+      "path": "02_软件源码/datasets/__init__.py",
+      "bytes": 1341,
+      "sha256": "763dd318e74ca1140a2658f6e6b0fac740570bb2129eca151d9ac2c765573660"
+    },
+    {
+      "path": "02_软件源码/datasets/coco.py",
+      "bytes": 6044,
+      "sha256": "1df8354debe9b3bf2e8f508d4c465fc68d0dd37c80d4342bf194aea3835a6731"
+    },
+    {
+      "path": "02_软件源码/datasets/neu_det.py",
+      "bytes": 17908,
+      "sha256": "125bad16bd18276b2f3bc60e640c3b0cd1a1c08a5ba8aa313d626c06d650d091"
+    },
+    {
+      "path": "02_软件源码/datasets/torchvision_datasets/__init__.py",
+      "bytes": 329,
+      "sha256": "ff554716f31b43c6e05cb0e6a6e4d04c0df392181a5bb43e7f6e6af07a5f3bb1"
+    },
+    {
+      "path": "02_软件源码/datasets/torchvision_datasets/coco.py",
+      "bytes": 3285,
+      "sha256": "3ef976cc4c1ba8cb483af6a636f9dbafde7db13ce8c57998d65e2ca419359b95"
+    },
+    {
+      "path": "02_软件源码/datasets/transforms.py",
+      "bytes": 11029,
+      "sha256": "c2e047f75ae519e7707f20f265f6e0dc742bd5c4c920bab40c772a2e3e106496"
+    },
+    {
+      "path": "02_软件源码/dual_branch_train.py",
+      "bytes": 11341,
+      "sha256": "e850c330cbc79b3cad4ed6a96ff5dbf6362e7f65d25d457b48f762a4c4737638"
+    },
+    {
+      "path": "02_软件源码/incremental_train.py",
+      "bytes": 116047,
+      "sha256": "205817c59990cb15206f00ebc189ac7e70d37bc443c05b9594dfea4d3b33a62a"
+    },
+    {
+      "path": "02_软件源码/launch.py",
+      "bytes": 1159,
+      "sha256": "468204fa0d8b43d36d55956c2e380bc4efa6eb5c75860ff3171553f677969fc9"
+    },
+    {
+      "path": "02_软件源码/LICENSE",
+      "bytes": 11963,
+      "sha256": "068413f8cf5e42e34d6e171e45a779df6dbea0a18249c0a223a3878e6de3cb27"
+    },
+    {
+      "path": "02_软件源码/MODEL/base_output_group1/checkpoint_phase0.pth",
+      "bytes": 134215932,
+      "sha256": "eebb47f9c1d63ff36fd9bb740a839e472ae8c813f449dd78fe34427379e99ecd"
+    },
+    {
+      "path": "02_软件源码/MODEL/daily_dual/best_overall_phase1.pth",
+      "bytes": 146943326,
+      "sha256": "573d3afa3e2c4515532525280801f7aef608c89aa2e87d302ea77438f6939947"
+    },
+    {
+      "path": "02_软件源码/models/__init__.py",
+      "bytes": 591,
+      "sha256": "c22117d2e50dda66041fbe6882c465f0ea163ca37b328afae26f6c5eaf705a42"
+    },
+    {
+      "path": "02_软件源码/models/backbone.py",
+      "bytes": 5439,
+      "sha256": "5331dc98c3aa90d1818b725f6c6f09afe4521131f616646757a58935177980ad"
+    },
+    {
+      "path": "02_软件源码/models/deformable_detr.py",
+      "bytes": 29063,
+      "sha256": "72a7f52d77ee684c6affa22128139b3f4806728ba7eedc7d6a24aaa2cdebaeff"
+    },
+    {
+      "path": "02_软件源码/models/deformable_transformer.py",
+      "bytes": 18196,
+      "sha256": "df4dc1458a3a3f240a4fd0e6e19d97288b772f7136cb4df43c409a3d2d355a9e"
+    },
+    {
+      "path": "02_软件源码/models/dual_branch_detr.py",
+      "bytes": 13278,
+      "sha256": "6cb660d8cf8215d6fef27f089a63069999a8ce112dda1130cfff39b4ced39e96"
+    },
+    {
+      "path": "02_软件源码/models/dual_denoising.py",
+      "bytes": 3690,
+      "sha256": "e9bbb7f2306dcc0bd8fe931fddfb71fd61bb06be9821bf41abc5b5eac6ab4dac"
+    },
+    {
+      "path": "02_软件源码/models/incremental_adapters.py",
+      "bytes": 1544,
+      "sha256": "36ad472367a12f1977602bd083af0e81e1061e5c8508d16056f2d8529c31d4e4"
+    },
+    {
+      "path": "02_软件源码/models/incremental_detr.py",
+      "bytes": 97312,
+      "sha256": "b7cd119c867bcd3f9d8e8d188ad6cb48a8f07baf1124fc7b35e4a8647a719154"
+    },
+    {
+      "path": "02_软件源码/models/matcher.py",
+      "bytes": 6158,
+      "sha256": "0c3487a408cec8d78eda21ad3332b7aa8811a1e3e15d53fcd2a1591e3a30ba90"
+    },
+    {
+      "path": "02_软件源码/models/ops/functions/__init__.py",
+      "bytes": 598,
+      "sha256": "e1a39c1cf23562b11d696d81f95cf8bef368c48149b681d1eadc7f6d188edd3a"
+    },
+    {
+      "path": "02_软件源码/models/ops/functions/ms_deform_attn_func.py",
+      "bytes": 3022,
+      "sha256": "00b8c8400c782a4f1ac93559938386a82cbebca4eeb2c3cf0e915a2825b9b4be"
+    },
+    {
+      "path": "02_软件源码/models/ops/functions/ms_deform_attn_func_py.py",
+      "bytes": 1681,
+      "sha256": "8c33359ec16bdbd01c0409431c36361acbdadb2fcf26c6a64a38fdeaf9f2a9fd"
+    },
+    {
+      "path": "02_软件源码/models/ops/make.sh",
+      "bytes": 593,
+      "sha256": "37a07393d06bc9114f634fbc216119ff709283a1718816aff8bd6eab6e26788b"
+    },
+    {
+      "path": "02_软件源码/models/ops/modules/__init__.py",
+      "bytes": 584,
+      "sha256": "3a40cdcd146fc93c3f4ba9702924582f6502e5fcd1ceccf687e9d0e6ff2d7b5f"
+    },
+    {
+      "path": "02_软件源码/models/ops/modules/ms_deform_attn.py",
+      "bytes": 6522,
+      "sha256": "6b8da418c7363618006200310105809a2cc63f85c7fc728710c851c04c8983f6"
+    },
+    {
+      "path": "02_软件源码/models/ops/MultiScaleDeformableAttention.cp312-win_amd64.pyd",
+      "bytes": 670720,
+      "sha256": "da42dbad71b27b89a7d7089882249ef541c79c2cf5f15cbf66f583a5e3b52569"
+    },
+    {
+      "path": "02_软件源码/models/ops/setup.py",
+      "bytes": 2559,
+      "sha256": "167e8f8ffa224514c1f195b5091b5ed6f7cfcabfe8b967719ddede3c402a103f"
+    },
+    {
+      "path": "02_软件源码/models/ops/src/cpu/ms_deform_attn_cpu.cpp",
+      "bytes": 1256,
+      "sha256": "d7f7c3d2df2484f3905005e13c8dc12dd943fd4451a59a059bda367eefa4dccd"
+    },
+    {
+      "path": "02_软件源码/models/ops/src/cpu/ms_deform_attn_cpu.h",
+      "bytes": 1139,
+      "sha256": "b9114ab52ea7610184b3eb9672731c3d1a7ce92e69bfdec6cf661ae988416aef"
+    },
+    {
+      "path": "02_软件源码/models/ops/src/cuda/ms_deform_attn_cuda.cu",
+      "bytes": 7316,
+      "sha256": "65cf318c67d99d6b163027e7190bc8776ff16a7197b332ad537f70cf6cc12be0"
+    },
+    {
+      "path": "02_软件源码/models/ops/src/cuda/ms_deform_attn_cuda.h",
+      "bytes": 1140,
+      "sha256": "c9cd9345e0881dfeebbfa5e98b6e6990a3d415a430bcbaaba3706ce5a2379401"
+    },
+    {
+      "path": "02_软件源码/models/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+      "bytes": 54694,
+      "sha256": "136729520587cbf0593209d692af61a1e8af5909bcf34b8bacb8844878496bad"
+    },
+    {
+      "path": "02_软件源码/models/ops/src/ms_deform_attn.h",
+      "bytes": 1838,
+      "sha256": "2fdc244f99e3e3b9af8dae02e09139de3f546eef83748495c3f175f48278cf41"
+    },
+    {
+      "path": "02_软件源码/models/ops/src/vision.cpp",
+      "bytes": 799,
+      "sha256": "8dec032236873cee3ae86921dabbbb02c62ffd95ddbb83aef0b1b856771e8a61"
+    },
+    {
+      "path": "02_软件源码/models/position_encoding.py",
+      "bytes": 3788,
+      "sha256": "fa32b437513885daf4649aea1f3ba847b62d22de7625e4d3ad2fc6cabd81733f"
+    },
+    {
+      "path": "02_软件源码/models/segmentation.py",
+      "bytes": 16308,
+      "sha256": "6202a25174418d315e0b0b67c948c147157432df62839f34e6a77af4325e219e"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/crazing_10.jpg",
+      "bytes": 21377,
+      "sha256": "522352a6c3532d45a64184b7b1435a74e8cdb732ebdc8e062ced67fa737cf63c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/crazing_100.jpg",
+      "bytes": 21837,
+      "sha256": "9d0d09aec1914e8bdc876052f357c8d898acfe38d1f9eae835944e5de432f969"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/crazing_101.jpg",
+      "bytes": 22537,
+      "sha256": "0c4ccbfd539aa9d0a151f25b3e798fbad36d2a3532218bcc5c313f06c2c1dda4"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/crazing_102.jpg",
+      "bytes": 18818,
+      "sha256": "b4e276eb131f61b44084d0c06640b00cbaecbffb48d3a8f3120d7aaa5cc84a53"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/crazing_103.jpg",
+      "bytes": 21976,
+      "sha256": "244204c49439f6b663a277e2e8c65344e0f2e51b5c3c763fa02a3ae925933f64"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/inclusion_10.jpg",
+      "bytes": 8770,
+      "sha256": "67a9e66628070a2508aced5103bb920ba0a48c8e1897d0ee5058647bc0f67f02"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/inclusion_100.jpg",
+      "bytes": 8904,
+      "sha256": "4a204bd8c11a28973c0f7abd57439cc1116af08aa4e7e1e1dd36eae887c9dec7"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/inclusion_101.jpg",
+      "bytes": 8504,
+      "sha256": "314b71b87c87fe49edd16b947d7161546fdbacc2655c7695da041a31c7026d7a"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/inclusion_102.jpg",
+      "bytes": 9272,
+      "sha256": "0b60560ad9252b5c0f1187c7b5a6a9ec732157ac79b0bd11493cc3b6d44bd3e3"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/inclusion_103.jpg",
+      "bytes": 7778,
+      "sha256": "2dcc3bb7d8c5ac7f3ef0821f9d4bd3a35a7964be1628a80a534ba0bf4646f3fc"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/patches_10.jpg",
+      "bytes": 21894,
+      "sha256": "0bce06415796cabe1187dd00329893d46ea1f71f07f5c795b16a4629ce71249c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/patches_100.jpg",
+      "bytes": 19633,
+      "sha256": "71b3e853711967d5e74010510cfebe9d2793022986a08d4e6f6b456a3a7d1fcc"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/patches_101.jpg",
+      "bytes": 19829,
+      "sha256": "4d2de82731b86cdbc7a66f2a9bfb01074bb4cb65e47bccf06b66470d53857071"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/patches_102.jpg",
+      "bytes": 22653,
+      "sha256": "5705722086f38f4ead84fd0d1e8a7aa3df1bf2590bbaed73d4b656d4c6d8e07d"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/patches_103.jpg",
+      "bytes": 21701,
+      "sha256": "17467d85b47cc880050c304ec54f014801980084b7db8cce7303e2a125368f81"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/pitted_surface_10.jpg",
+      "bytes": 9242,
+      "sha256": "bd2c587072010df78e39b36790392ad28b6a0353b8d78a10afa56a25998a515c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/pitted_surface_100.jpg",
+      "bytes": 12359,
+      "sha256": "df878735886705a5cf3e8d4024cd8d2729fd16cbb8696a289a7252b1854e7f0a"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/pitted_surface_101.jpg",
+      "bytes": 12919,
+      "sha256": "7df40e532413e8125e874e0d93467862e9b2aeba436d7e78f9fb93419e68a6eb"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/pitted_surface_102.jpg",
+      "bytes": 12182,
+      "sha256": "04cb6afe5cb2b4026f4546a742fb8d19840269e963a684d30c7ab54e576800e4"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/pitted_surface_103.jpg",
+      "bytes": 10507,
+      "sha256": "18a3a8a97ca9bb7b323dbba23ad48f391793626f8e1508b132ea3587e125a730"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/rolled-in_scale_10.jpg",
+      "bytes": 15841,
+      "sha256": "212c3cda10a863db2ee404baf29ee8a42adabe894b7aecd09591a86f177389f4"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/rolled-in_scale_100.jpg",
+      "bytes": 14866,
+      "sha256": "b6660efc8a7cc57b7da616766b14c06812254c0422d48bfa0860db753c4f6cdd"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/rolled-in_scale_101.jpg",
+      "bytes": 16786,
+      "sha256": "c7260b6097a950a585747137b69ceb34033c07de7c0c5c59f9e14170a963e3d2"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/rolled-in_scale_102.jpg",
+      "bytes": 15082,
+      "sha256": "473ee8c670a34f306161b59bb73e96980bc77e9e163f7d198b49162cdf400f80"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/rolled-in_scale_103.jpg",
+      "bytes": 15100,
+      "sha256": "d7dea4bf779ad8441b89cd7d2f76871c91843dc409ff818c3dd5baa554e05d8b"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/scratches_10.jpg",
+      "bytes": 10689,
+      "sha256": "8790b870402cf95314da4d3ace3cc38d5721a3f1f321e3e346811988d7736600"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/scratches_100.jpg",
+      "bytes": 12529,
+      "sha256": "7e404244566609b8ef412f87a34aaff0af5ceb0c2140cc03e25e3f3e2f84f2af"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/scratches_101.jpg",
+      "bytes": 10815,
+      "sha256": "8cf6422094af770e264d9b25b74dd6e599f6b051f5fb45b8bf8070f4d0a42d34"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/scratches_102.jpg",
+      "bytes": 8199,
+      "sha256": "cdb86540a847d39765c21a839855cc7b81fa2c4a8637f77957378dccb011834e"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/images/scratches_103.jpg",
+      "bytes": 5704,
+      "sha256": "4238f54faa3fac98eec53d1fbdee0bbc92c523bf3110f1bc4ef5ba86f96b1a97"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/crazing_10.txt",
+      "bytes": 80,
+      "sha256": "2abc59875458d8bb35c103b0f73a6439e479892416bec41c730eda24caf66a6c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/crazing_100.txt",
+      "bytes": 145,
+      "sha256": "5a1897f95a8a61b3b1d8525266f9e5caefa8b9c30ee7d11b8599057932f2f16c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/crazing_101.txt",
+      "bytes": 55,
+      "sha256": "7a61a17b907d745de4d1d60e654463b461fa50089a933d04f11ea72f1b3bca3b"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/crazing_102.txt",
+      "bytes": 56,
+      "sha256": "b93d286d6930b40f485722c8a4172c6a7beaaa5e1a461ce8831d5bf62013510d"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/crazing_103.txt",
+      "bytes": 82,
+      "sha256": "a4017c18a2ece057943991031e63746aa2a84dae10d0d24461bc310860042f61"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/inclusion_10.txt",
+      "bytes": 97,
+      "sha256": "7f1ab9554c2e08388fa2a31a6752c3f08e74171e4c242a288c759a9d8b27dee4"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/inclusion_100.txt",
+      "bytes": 39,
+      "sha256": "e8bd7388cad3a2a746ece168807b4817cb127d218ea6b0ba2f83f840f4da389c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/inclusion_101.txt",
+      "bytes": 29,
+      "sha256": "16e4d194ab4b55fe3cde2db7b2921a084ecc3e5856574e5e984ab33177806d46"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/inclusion_102.txt",
+      "bytes": 53,
+      "sha256": "b1a5475189cc5a1d14eab11dbb362dbb86d0b73e2211359f46064180ecc3bc16"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/inclusion_103.txt",
+      "bytes": 41,
+      "sha256": "1bcb4cee862ba902858d50f5d8e9e28183e1147534749c62fbec256b78556ba2"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/patches_10.txt",
+      "bytes": 64,
+      "sha256": "f9a248709fbaa0fcfc789785b9350aee98409b10ca355238b1ad020410a4f4a8"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/patches_100.txt",
+      "bytes": 107,
+      "sha256": "f2d2a365ea3c6925d8f33e362b313797e1aa8895467568578675541d566c823c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/patches_101.txt",
+      "bytes": 107,
+      "sha256": "8b787e0b7464abc21a96d1f68c5130b344f21da5077d221fb6bf32b7d0b4fc4d"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/patches_102.txt",
+      "bytes": 60,
+      "sha256": "7ec45a0b9d094c4ebba4c47fa14f99de04972dac7388bc3cfec5061ffa00bbd6"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/patches_103.txt",
+      "bytes": 29,
+      "sha256": "3680b93d7a0a394bb9c2138067f57fc2f144e7fb7ae2c37e657a0f98631e60eb"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/pitted_surface_10.txt",
+      "bytes": 51,
+      "sha256": "80f9ba38a2b910be2605b8dae47a9faf3fbe937acc286dd9c749cc6e209dc93f"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/pitted_surface_100.txt",
+      "bytes": 61,
+      "sha256": "5438040e854a3ae02f4484860ae9f918d57ce4131c95a0a473329c19e1611c48"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/pitted_surface_101.txt",
+      "bytes": 147,
+      "sha256": "786150ac2121a81977f8fe9d4ce727663574dba3708e0ec787b1161450ae64be"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/pitted_surface_102.txt",
+      "bytes": 172,
+      "sha256": "3e2ab7ab71acee1eafd07c6d3493ac18ea7aeaf77a9aa7deefb516ee1e93ae5f"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/pitted_surface_103.txt",
+      "bytes": 79,
+      "sha256": "e04f4970febf82aaa7187d9faec3ccaea6d4d5513871d5d7f82142ad781043c2"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/rolled-in_scale_10.txt",
+      "bytes": 52,
+      "sha256": "71302078a25fd5c776395da5e9687885eaf0145cdf70d337fecec072f7c284e7"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/rolled-in_scale_100.txt",
+      "bytes": 131,
+      "sha256": "d2b5a3e0cbf2236b23084c08f1926631adb443229b823b97602cc3a0cd006b68"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/rolled-in_scale_101.txt",
+      "bytes": 98,
+      "sha256": "08d0e3432d0aafbba46d4dc333a5d96e2eb577eba0b559213065884f0bfe7750"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/rolled-in_scale_102.txt",
+      "bytes": 164,
+      "sha256": "13bcc732088080d06a8a4751b49b6090e6b78e1384cafe175b8d8f7442f450bd"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/rolled-in_scale_103.txt",
+      "bytes": 68,
+      "sha256": "692760a05ff3c1220e7d40ec8ba70275bcff9557179a4225c8ac604a8b153c88"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/scratches_10.txt",
+      "bytes": 87,
+      "sha256": "63cc55a393afd2d9da3703832cf2a863a0e762da22cd741a02139ae1c5690153"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/scratches_100.txt",
+      "bytes": 38,
+      "sha256": "85446dae5ea3d424f9b859d2b58290646383d1edd549d02edae231005bea0c09"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/scratches_101.txt",
+      "bytes": 38,
+      "sha256": "0bb2772cef6f36a14027df49c6d30ec3eab1244d3ad6a9471e5ea5b8733b9c90"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/scratches_102.txt",
+      "bytes": 39,
+      "sha256": "719cbd59b8f25564ffd801056069d8c7cf4ab550ac8ab2994c53e26c2d52577e"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/train/labels/scratches_103.txt",
+      "bytes": 29,
+      "sha256": "4b370fe0f90dc7c960b6c50955c40d7e45774e8cb4835b903ff81ee3211d2a9e"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/crazing_1.jpg",
+      "bytes": 22873,
+      "sha256": "5278cd3695adbcbd7a16a7e4b2c6bc27f18095ab8a1e034d2b06c0fc42020eca"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/crazing_2.jpg",
+      "bytes": 23379,
+      "sha256": "c49651a58066f155f1efc0a488bf7415d3d1ef0fb2948f6c2ee6e8296411c9be"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/crazing_3.jpg",
+      "bytes": 21321,
+      "sha256": "155778cd3e7c82e81ea80a956a015f4eb3d0d09828fca6956eb8883edc39d123"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/crazing_4.jpg",
+      "bytes": 23008,
+      "sha256": "0f52f3882d3ffc77a5f20c2c4b557a6a79620090e6f8ef9a0568ed508749e436"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/crazing_5.jpg",
+      "bytes": 23226,
+      "sha256": "efcdf6413c7265a1492cf9e9de37ae8b260061b60b06a0212dc9c9b840cb4ab2"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/inclusion_1.jpg",
+      "bytes": 8761,
+      "sha256": "2b0a6eff755d5c5867d3e3ca6b26af9548813e50c9b12b0f3381a49560a42634"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/inclusion_2.jpg",
+      "bytes": 8645,
+      "sha256": "92befa6113c232f8fa98365a9e491fea7ce06e64bca4ba70ba78655dd1a2a864"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/inclusion_3.jpg",
+      "bytes": 7759,
+      "sha256": "35177212789df9229865a2c8a025e2e68a41f248bfe9ee979360f8fe8dc856c2"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/inclusion_4.jpg",
+      "bytes": 8354,
+      "sha256": "abbc7412b645883c3266b64f5cf04870aa6969031641f02788122aa7539f65d6"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/inclusion_5.jpg",
+      "bytes": 8869,
+      "sha256": "d01acc37fb22a3ab0d4f6ab6632f7666a4df27f1f75653ce2cb7c6f5c58ce0cb"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/patches_1.jpg",
+      "bytes": 22760,
+      "sha256": "0ea4843aa7801ce5a5e672ec8c0266d4910aa7d740955f38d087b38154d0fe67"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/patches_2.jpg",
+      "bytes": 21807,
+      "sha256": "2fdb317049ad4e9e14742cd8e134d9c0037d7569c316ac992a449ecbf58101d0"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/patches_3.jpg",
+      "bytes": 22111,
+      "sha256": "2d6e349a35ac2ed4949e6a4b5f50ffef1e0b26172cef027405eea6c188dff699"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/patches_4.jpg",
+      "bytes": 18903,
+      "sha256": "3fa9c68092dd6daf47855bd70c9120cd3066cd9aed6d5b34e542a670aba124cc"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/patches_5.jpg",
+      "bytes": 21654,
+      "sha256": "9f9d4356fbfc6f750225be8706c3c87c80749db66d5c68edaf43612c936909f2"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/pitted_surface_1.jpg",
+      "bytes": 8882,
+      "sha256": "38a0ece141350f5bed53c99da4d96ce25d42b3ed4248e536a579ab823abfb318"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/pitted_surface_2.jpg",
+      "bytes": 11291,
+      "sha256": "389add56187e37997a7eebf2d6fe105ce47a9619560436bfc1ea32ec08f73d76"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/pitted_surface_3.jpg",
+      "bytes": 12926,
+      "sha256": "03db264bd3a288ea60e0e40efd521e91f3d2c638a64df4fe9e51d1cce8617daf"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/pitted_surface_4.jpg",
+      "bytes": 8990,
+      "sha256": "d74f4eb848d694be8a3988fc327053dbea7dd0f0b2cbfc0fa48fc0a8a024b909"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/pitted_surface_5.jpg",
+      "bytes": 12691,
+      "sha256": "6484ec2d13587a91d44089148a7e64e5d9f51116715256d5d5b994f101b6b868"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/rolled-in_scale_1.jpg",
+      "bytes": 16253,
+      "sha256": "e9d0358a2859da86a7a9cc75deb5c235fcb8b14e8773cd92e94593b0289736fd"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/rolled-in_scale_2.jpg",
+      "bytes": 17234,
+      "sha256": "b8a7cfe68f9863ad7885f5b7e9cdbb7b26a7a22ff9d634f9f19fa8438bc76464"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/rolled-in_scale_3.jpg",
+      "bytes": 16774,
+      "sha256": "146e4158d3a08e6c0c11c59efefc8c00c9324996be5cd4ec5697a88c89137636"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/rolled-in_scale_4.jpg",
+      "bytes": 17007,
+      "sha256": "9814344b48b76c748b56d2bbcbb54f74717ef39ab016872a3e0cca19ade9c143"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/rolled-in_scale_5.jpg",
+      "bytes": 17369,
+      "sha256": "33166fb0d46e89004e309ad0c42ca44360cb550e3597c24a1661a4264c1bec8a"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/scratches_1.jpg",
+      "bytes": 7415,
+      "sha256": "500c46e2f5d7065d8c492b0cfb36c3ba77a85a744079bf6453dfc85e02b97a3c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/scratches_2.jpg",
+      "bytes": 7541,
+      "sha256": "960f6b75fb945308181a0736c176aff4c6fd94bb7e7956e26b04fd0cdbdf3657"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/scratches_3.jpg",
+      "bytes": 8002,
+      "sha256": "f2e1cb55c6aff957fc5cb7b32703e675fbaf2d9c4ef6c6151e10ab25f48ce78c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/scratches_4.jpg",
+      "bytes": 9570,
+      "sha256": "d7a5a987b96863bb3cdd161c6f81c841ed7c9dadaf048db31fb3bdc70de95f21"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/images/scratches_5.jpg",
+      "bytes": 9927,
+      "sha256": "dfe599fd61cf93513ab221e5731036badaa27b8a304d2c0e5f9b083128b6100c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/crazing_1.txt",
+      "bytes": 39,
+      "sha256": "1195485e4a85777044078bef8008863ce1efc8f06823abac50118e7712905c47"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/crazing_2.txt",
+      "bytes": 67,
+      "sha256": "57501566fd9f4a9777005792a094c5765a4fd7ce29f3b76700125c692a361179"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/crazing_3.txt",
+      "bytes": 52,
+      "sha256": "3fdda30e8ed3ecf3abbc3ce1b05b51f6119b01a683a8d55f65eea55929dad0c4"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/crazing_4.txt",
+      "bytes": 52,
+      "sha256": "d77bc23fe298d33d9d4813a3cb0d03171323cf73804ea30d10eb2e996597b55f"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/crazing_5.txt",
+      "bytes": 50,
+      "sha256": "51904701439b722a609cd14b80378369e57d16efa83daa925e0b9a39315cf7c3"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/inclusion_1.txt",
+      "bytes": 189,
+      "sha256": "808c3f3b81ecf9515b3bebc3cacb736026a0e92401fcaaacad8412f3a24a272d"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/inclusion_2.txt",
+      "bytes": 91,
+      "sha256": "03038ebdba7ed7d8c1c8bc3f474a330b324cde781fd9f867fb7309cb35f86bd4"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/inclusion_3.txt",
+      "bytes": 73,
+      "sha256": "1ea5c75ee00c84a9559a48e414569708826ed1c86b8a5c5296167005b8a1d10d"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/inclusion_4.txt",
+      "bytes": 68,
+      "sha256": "67472cbfd3c17a0c3352bd663933bbcba244707bbe4774c093572f663e190007"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/inclusion_5.txt",
+      "bytes": 133,
+      "sha256": "678bd0749392d6c2d530ba5fdbe53cf2fb34a3fe61118bdd076a70fd69f28347"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/patches_1.txt",
+      "bytes": 112,
+      "sha256": "7b9ef850fedb971ad2a56f8473512c0ade4ea6c8b5e0ef12c8540c6e1c1b2fff"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/patches_2.txt",
+      "bytes": 97,
+      "sha256": "96e0a6e1c1fc96684a8ece0fcedb5b9187b869ad7fc2181771ef67c42320ccc7"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/patches_3.txt",
+      "bytes": 185,
+      "sha256": "37b38bb7ec3d7188a6684080b2fc86b5f3ed7aed0a265b146bcc68e682ac0e5e"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/patches_4.txt",
+      "bytes": 95,
+      "sha256": "66e06d924ed9c6a32d677edd4cd0af3f1f007e2fb9c84cfdc3ae1c8b62269c90"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/patches_5.txt",
+      "bytes": 121,
+      "sha256": "ab27e6b041c5ca5f744643ccff7ab1a94787157763dddd5f436edcc1411830ff"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/pitted_surface_1.txt",
+      "bytes": 67,
+      "sha256": "b0dfa6b96319cdc897b685a063cd2d079b2f76a193f20a704a1761ce0874bb7d"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/pitted_surface_2.txt",
+      "bytes": 63,
+      "sha256": "33be5681aa01aab960ed1cf275b31976e946aad8340d9f67f5325cb78ba257fd"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/pitted_surface_3.txt",
+      "bytes": 49,
+      "sha256": "bcaa31f751f37b99425b0fd4d1a09a084957df73e497a502cfb807a6a43a5839"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/pitted_surface_4.txt",
+      "bytes": 41,
+      "sha256": "d6ca7e6de1a42b052009a55ea954d20265da5019714c8c069369a212804290f2"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/pitted_surface_5.txt",
+      "bytes": 27,
+      "sha256": "25ea500a73cb5459a52c476ff410d31ab91c0831364d21fd219391efd390c304"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/rolled-in_scale_1.txt",
+      "bytes": 65,
+      "sha256": "5b8a43b89da4ec1eee661143d95fdaabd47f131bae804f50afc6a0b2b8e5b3cf"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/rolled-in_scale_2.txt",
+      "bytes": 26,
+      "sha256": "743948413e1de417aa1fbb4ba53e8d1b90d47d8945c11613ea7fe32cb4273cdb"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/rolled-in_scale_3.txt",
+      "bytes": 49,
+      "sha256": "4e01bb829bc64f55045736a93902528fc12bb3f4666f1611428ca70df5b85a2c"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/rolled-in_scale_4.txt",
+      "bytes": 54,
+      "sha256": "0b370f9a4443719fbcb73b300fa6cd6464d3c0e82a0ff0a51e27f3ef7df6a2f8"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/rolled-in_scale_5.txt",
+      "bytes": 55,
+      "sha256": "3da5c9e0056d8e485858abb565fae1c49b19d47580d3ad30ce620a482d574aa7"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/scratches_1.txt",
+      "bytes": 82,
+      "sha256": "7e3bbfcf9a1559911a8f56cd7e9727f44b62c1e26cd11cf49b1e027d3376a551"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/scratches_2.txt",
+      "bytes": 23,
+      "sha256": "14f661d8a1345999ac49289a1a8713be430a037e0bf9d54ec1d5fabfe3e8ae19"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/scratches_3.txt",
+      "bytes": 50,
+      "sha256": "cf718a614e73914d0c5f63d058fdd2b7d9f4cc9adfb4538de4b42c08e654c486"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/scratches_4.txt",
+      "bytes": 26,
+      "sha256": "1523660d8fbd168e81ae5eb59103a15d7705368859dd9ee77ba0601acc346d85"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/valid/labels/scratches_5.txt",
+      "bytes": 27,
+      "sha256": "c251d7036303aadcc77c6e097ef27954bb1394bffaa25c636b3a6e342b15ab86"
+    },
+    {
+      "path": "02_软件源码/NEU-DET/示例数据说明.md",
+      "bytes": 452,
+      "sha256": "e0ef1d4bc50905acd45f3e330b7bc7337300969ae3df572cac3ccae76e9225c8"
+    },
+    {
+      "path": "02_软件源码/README.md",
+      "bytes": 1540,
+      "sha256": "96618d893001be0b3c5ec5e6fbe0885d24f8d2ac2d2471408bcbbed32aac89dc"
+    },
+    {
+      "path": "02_软件源码/requirements.txt",
+      "bytes": 245,
+      "sha256": "3b492022a1568d2a7b9076d7760cbf6f73f9355a1f845ec0baa9804c5693a052"
+    },
+    {
+      "path": "02_软件源码/services/__init__.py",
+      "bytes": 68,
+      "sha256": "e2c0f36c67a2c66460398101cd45032606a02fbb35dfd52717eaf92dbfed7ad9"
+    },
+    {
+      "path": "02_软件源码/services/dataset_service.py",
+      "bytes": 13691,
+      "sha256": "75a77d058401882fb2caba6746f4662a2eb50bbc51f4fbc9289b153f7e63896c"
+    },
+    {
+      "path": "02_软件源码/services/task_service.py",
+      "bytes": 11131,
+      "sha256": "7d70130c90f5d3ea6ffb030f3d93bdd584992e1ed722e6d4e75ff8a43a9436be"
+    },
+    {
+      "path": "02_软件源码/services/workflow_store.py",
+      "bytes": 8244,
+      "sha256": "b581acbde36032dbf0fcb2b4370ad67ac9480cf8c2ea682bc0337795145b2933"
+    },
+    {
+      "path": "02_软件源码/THIRD_PARTY_NOTICES.md",
+      "bytes": 836,
+      "sha256": "c80395652fe791c6c398fce4db9c4e36b81ab207aab2e3d56549dbcc5da11228"
+    },
+    {
+      "path": "02_软件源码/tools/run_incremental_task.py",
+      "bytes": 8379,
+      "sha256": "6893bf604953673f450cd3c1fce8c2c90d16cc748e20c5dfbf4ad1a14b2bbb5a"
+    },
+    {
+      "path": "02_软件源码/tools/train_incremental_dual_100.ps1",
+      "bytes": 2280,
+      "sha256": "3a4f1579fca95701f8afec946a7dfdabbfc5c47cb332ab317c5b4b4f9785f9d3"
+    },
+    {
+      "path": "02_软件源码/ui/__init__.py",
+      "bytes": 33,
+      "sha256": "b80e951c4575cb9a168be73b8cb0495725bb4c3c50909df723a0105847e9761a"
+    },
+    {
+      "path": "02_软件源码/ui/workflow.py",
+      "bytes": 35360,
+      "sha256": "1aa38bd59e2775705ee8ee19cc7f8543282c3fa61d11f9dcd1fa9e7c4367798a"
+    },
+    {
+      "path": "02_软件源码/util/__init__.py",
+      "bytes": 506,
+      "sha256": "981f3946f46aa50571bb2c33c0b0c183800f30c7c591d698398e374912ec2ce7"
+    },
+    {
+      "path": "02_软件源码/util/box_ops.py",
+      "bytes": 4541,
+      "sha256": "dfb1866f3af154bd06d25743f260a89da1e225f40f3c6cd5c3c8131e75406e60"
+    },
+    {
+      "path": "02_软件源码/util/checkpoint_config.py",
+      "bytes": 7931,
+      "sha256": "e659a214a7c9c7a7b174a066633cddaae3c60d724818d68cc256c4f24334a230"
+    },
+    {
+      "path": "02_软件源码/util/detection_metrics.py",
+      "bytes": 7002,
+      "sha256": "e294f349a13bac835e715402f729acf150b5effb08b4013dc3acf092ba1a674b"
+    },
+    {
+      "path": "02_软件源码/util/gradio_compat.py",
+      "bytes": 2381,
+      "sha256": "acba6251724bfce1a65894f54e5955bf11c2d2a408da5f812d38424677ecef37"
+    },
+    {
+      "path": "02_软件源码/util/misc.py",
+      "bytes": 17669,
+      "sha256": "47fa5bb993d02af35beb6d7e197e1d000bc2d7fd668277fe317bc04532fc9928"
+    },
+    {
+      "path": "02_软件源码/VERSION",
+      "bytes": 7,
+      "sha256": "4ca8bbd3c595ee306226c6996b32b8d47a900217c55a7ed0cfc868ee444f34f1"
+    },
+    {
+      "path": "02_软件源码/启动系统.bat",
+      "bytes": 152,
+      "sha256": "fbbb624debe84547d61491bbd1b07ff6174a7aed17495934f3780bb6cafc3fe3"
+    },
+    {
+      "path": "02_软件源码/启动系统.ps1",
+      "bytes": 360,
+      "sha256": "350e8cf2f4d509928bf0f6a0b59ed77682990d1207852a99504f4aeabaa2b79c"
+    },
+    {
+      "path": "03_运行说明/模型导出清单.json",
+      "bytes": 1090,
+      "sha256": "cf7b30ea0f85477ae2ba19a05bcfd19b3c5f0c18abba8eaadc25d3f820f1c07b"
+    },
+    {
+      "path": "03_运行说明/父模型接入更新.md",
+      "bytes": 1831,
+      "sha256": "18dff3a4d8c3b5592b7e0f711a27678d277fdf0fe8b489dbb108f727b6aeb039"
+    },
+    {
+      "path": "03_运行说明/环境与启动.md",
+      "bytes": 1230,
+      "sha256": "4db512321bdcb19276df93be7a33259ed96fdbcbd3616e63b71d5d3204056867"
+    },
+    {
+      "path": "03_运行说明/示例数据清单.json",
+      "bytes": 17171,
+      "sha256": "5aa4b309c6f239826cf34e2ff5816762b02b363f46bd80320ef8f1b4cbaeddb1"
+    },
+    {
+      "path": "03_运行说明/资源说明.md",
+      "bytes": 800,
+      "sha256": "e7566505ae32c87037dd28df09d7685275042d508e8ff5bc8b22ea9e82ee87cc"
+    },
+    {
+      "path": "03_运行说明/验证说明.md",
+      "bytes": 2705,
+      "sha256": "b57635cf1dffc26a78fbcd5fdf549f7b4b5a7cb08bc4228d1a7011c76b42b3d6"
+    },
+    {
+      "path": "启动演示.bat",
+      "bytes": 86,
+      "sha256": "499d62da680ada8af0ae1ebe757e2a6aa6f803e6d76d88e5453de2ff2728dffe"
+    },
+    {
+      "path": "软件信息.json",
+      "bytes": 1051,
+      "sha256": "fc440d3e1831adc8ff23e45ba735aec3d7bee5dafad37ce09270b68f9fb89a32"
+    }
+  ]
+}

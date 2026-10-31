@@ -1,0 +1,28 @@
+[
+  {
+    "source": "MODEL/base_output_group1/checkpoint_phase0.pth",
+    "source_sha256": "fa291c78b31700c4f8bf85ef65409fa6bcc0b8c5c645768a03b2b38c9627088d",
+    "package": "MODEL/base_output_group1/checkpoint_phase0.pth",
+    "sha256": "eebb47f9c1d63ff36fd9bb740a839e472ae8c813f449dd78fe34427379e99ecd",
+    "bytes": 134215932,
+    "model_tensors_unchanged": 427,
+    "omitted": [
+      "optimizer",
+      "scheduler"
+    ],
+    "purpose": "fresh incremental initialization or inference; no optimizer continuation"
+  },
+  {
+    "source": "incremental_output_100_dual_20261027_122539_681/best_overall_phase1.pth",
+    "source_sha256": "88b66d58abf8c67d8acfa36ce8812fa356a9596c8ed16a6b73d9c75644257078",
+    "package": "MODEL/daily_dual/best_overall_phase1.pth",
+    "sha256": "573d3afa3e2c4515532525280801f7aef608c89aa2e87d302ea77438f6939947",
+    "bytes": 146943326,
+    "model_tensors_unchanged": 538,
+    "omitted": [
+      "optimizer",
+      "scheduler"
+    ],
+    "purpose": "fresh incremental initialization or inference; no optimizer continuation"
+  }
+]
