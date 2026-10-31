@@ -120,7 +120,6 @@ powershell -ExecutionPolicy Bypass -File .\启动系统.ps1 -Python '实际训�
 ```
 .
 ├── 00_先读我.md               # 快速导读
-├── 01_登记材料/               # 软件著作权登记材料（操作手册、设计说明书、源程序节选）
 ├── 02_软件源码/               # 可独立运行的精简工程（核心代码）
 │   ├── launch.py              # 应用入口（端口自动选择）
 │   ├── app.py                 # Gradio 五页界面
